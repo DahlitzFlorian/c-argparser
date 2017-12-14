@@ -11,9 +11,10 @@ void parse_args(int argc, char *argv[], Argument *arguments[], int arguments_cou
 	for (int x = 1; x < argc; x++) {
 		for (int y = 0; argv[x][y] != '\0'; y++) {
 			if (argv[x][y] == '-') { // yey, parameter.
-				char var = argv[x][(++y)++]; // Parameter, increment before to get form '-' to parameter, increment after
-				char param[999] = {};        // to get to whitespace
+				char var = argv[x][++y]; // Parameter, increment before to get form '-' to parameter
+				char param[999] = {};
 				int c = 0; // length of passed data
+				y++; // Increment again to get to first whitespace
 
 				for (int j = ++y; argv[x][j] != ' ' && argv[x][j] != '\0'; j++) { // increment before to skip whitespace
 					param[c++] = argv[x][j];
