@@ -35,7 +35,7 @@ arg_db.value.str
 | type name | values |
 | -- | :--:|
 | TYPE_FLAG | Flag, only needs to be added |
-| TYPE_STR  | a-zA-Z0-9!"#$%'()*+´-./:;<=>?@[\]^_`{|}~ |
+| TYPE_STR  | a-zA-Z0-9!"#$%'()*+´-./:;<=>?@[\]^_`{\|}~ |
 | TYPE_STR_ALPHANUM | a-zA-Z0-9 |
 | TYPE_STR_ALPHA_UPPER | A-Z |
 | TYPE_STR_ALPHA_LOWER | a-z |
